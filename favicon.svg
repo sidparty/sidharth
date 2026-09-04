@@ -1,6 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
-  <rect width="40" height="40" fill="#ffffff"/>
-  <rect x="15" y="5" width="10" height="30" fill="#000000"/>
-  <rect x="15" y="5" width="20" height="10" fill="#000000"/>
-  <rect x="5" y="25" width="20" height="10" fill="#000000"/>
+  <style>
+    .bg { fill: #ffffff; }
+    .fg { fill: #000000; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #14120b; }
+      .fg { fill: #edecec; }
+    }
+  </style>
+  <rect class="bg" width="40" height="40"/>
+  <rect class="fg" x="15" y="5" width="10" height="30"/>
+  <rect class="fg" x="15" y="5" width="20" height="10"/>
+  <rect class="fg" x="5" y="25" width="20" height="10"/>
 </svg>
